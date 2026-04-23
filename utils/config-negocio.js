@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: Hany Dorta Nails Designer
+// CLIENTE: Norkykm_Nails
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = '99756b6d-1c65-4239-a4e9-77855bed94b7'; // ID de Hany Dorta Nails Designer
+const NEGOCIO_ID_POR_DEFECTO = '9ead31e9-f7c7-40ba-8ce5-c4598fe188a7'; // ID de Norkykm_Nails
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'Hany Dorta Nails Designer';
+    return config?.nombre || 'Norkykm_Nails';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '58054096';
+    return config?.telefono || '54517017';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'dortahany@gmail.com';
+    return config?.email || 'norkykmmayea97@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a Hany Dorta Nails Designer!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a Norkykm_Nails!';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'hanydorta-nails';
+    return config?.ntfy_topic || 'norkykmnails';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para Hany Dorta Nails Designer');
+console.log('✅ config-negocio.js listo para Norkykm_Nails');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);
