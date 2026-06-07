@@ -1,0 +1,22 @@
+{
+  "name": "Norkykm_Nails",
+  "short_name": "Norkykm_Nails",
+  "description": "Uñas y belleza - Tu espacio de cuidado personal",
+  "start_url": "/norkykmnails/",
+  "scope": "/norkykmnails/",
+  "display": "standalone",
+  "background_color": "#ec4899",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/norkykmnails/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/norkykmnails/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
